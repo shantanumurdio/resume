@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form
+      action="https://www.google.com/maps"
+      autocomplete="on"
+      name="login_form"
+      target="_blank"
+      <!-- method="get"; -->
+      method="post"
+    >
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="name">Name:- </label>
+        <input type="text" >
+        <br>
+        <label for="Email">Email:- </label>
+        <input type="email" />
+        <br />
+        <label for="password">Password:- </label>
+        <input type="password" name="password" />
+        <br />
+        <input type="radio" name="fav" />
+        <label for="html">HTML</label>
+        <br />
+        <input type="radio" name="fav" />
+        <label for="css">CSS</label>
+        <br />
+        <input type="radio" name="fav" />
+        <label for="js">JS</label>
+        <br />
+        <textarea name="" cols="10" rows="10"></textarea>
+        <br />
+
+        <label for="pet">Choose a pet:-</label>
+        <select name="pet" >
+          <option value="mosquito">Mosquito</option>
+          <option value="crocodileat">Crocodile</option>
+          <option value="cobra">Cobra</option>
+          <option value="lion">Lion</option>
+          <option value="tiger">Tiger</option>
+        </select>
+        <br />
+        <br />
+
+        <input type="submit" value="Submit" />
+        <button type="submit" onclick="alert('I am subscribed')">
+          Subscribe Me!!!
+        </button>
+      </fieldset>
+    </form>
+</body>
+</html>

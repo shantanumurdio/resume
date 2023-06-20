@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    text-decoration-style: dashed ;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    background-color: #529306;
+    background-color: rgb(25, 125, 255);
+    background-color: rgba(25, 15, 255, 0.6);
+    background-color: hsl(180, 100%, 50%);
+    background-color: hsla(115, 50%, 60%, 0.3);
+}
