@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    /* border: 2px solid green; */
+}
+
+.navbarSection, .navbarContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbarContainer{
+    padding: 0 1rem;
+}
+
+.navbarLeftContainer, .navbarMiddleContainer, .navbarRightContainer{
+    width: 30%;
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbarLeftContainer img{
+    width: 25%;
+    height: 45%; 
+}
+
+.navbarLeftContainer span{
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+.navbarMiddleContainer input{
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+}
+
+.navbarRightContainer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 .5rem;
+}
+
+.navbarRightContainer span{
+    margin: 0 .5rem;
+    font-weight: 700;
+}
+
+main{
+    height: 90%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+}
+
+.sideBarCategory span{
+    margin: 0.5rem ;
+    padding: .5rem ;
+    font-weight: 700;
+}
+
+.leftbarSection{
+    width: 15%;
+    height: 100%;
+    border: 2px solid green;
+}
+
+.mainContentSection{
+    width: 85%;
+    height: 100%;
+    border: 2px solid yellow;
+}
+
+.fixedCategoryContainer{
+    width: 100%;
+    height: 10%;
+    border: 2px solid red;
+}
+
+.fixedCategoryContainer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.fixedCategoryContainer ul li{
+    margin: 0 .5rem;
+    padding: 0.2rem .5rem;
+    background-color: silver;
+    border-radius: 10px;
+}
+
+.videoCardsContainer{
+    width: 100%;
+    height: 90%;
+    /* border: 2px solid green; */
+    /* padding: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+.videoCardContainer{
+    width: 32%;
+    height: 300px;
+    /* border: 2px solid red; */
+    margin: .5rem;
+}
+
+.videoCardContainer img{
+    width: 100%;
+    height: 70%;
+}
+
+.videosDetails{
+    width: 100%;
+    display: flex;
+    height: 30%;
+    padding: 0 .5rem;
+    /* border: 2px solid red; */
+}
+
+.videosDetails img{
+    width: 40px;
+    height: 40px;
+}
+
+.details{
+    margin-left: 1rem;
+}
+
+.details .mainPara{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
