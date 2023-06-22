@@ -1,0 +1,60 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        background-color: black;
+    }
+
+    div{
+        width: 300px;
+        height: 300px;
+        border: 10px solid white;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    div::before{
+        content: "";
+        display: block;
+        height: 140px;
+        width: 5px;
+        background-color: yellow;
+        position: absolute;
+        left: 147.5px;
+        bottom: 150px;
+        transform-origin: 0% 100%;
+        animation: clockM 3600s linear infinite;
+    }
+    @keyframes clockM{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    div::after{
+        content: "";
+        display: block;
+        height: 100px;
+        width: 5px;
+        background-color: red;
+        position: absolute;
+        left: 147.5px;
+        bottom: 150px;
+        transform-origin: 0% 100%;
+        animation: clockH 21600s linear infinite;
+    }
+    @keyframes clockH{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<div>
+</div>
