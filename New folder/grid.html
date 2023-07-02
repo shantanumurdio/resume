@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .parent {
+          border: 2px solid red;
+          display: grid;
+          /* grid-template-columns: 150px 150px 150px ; */
+          /* grid-template-columns: 150px auto 150px ; */
+          /* grid-template-columns: auto auto auto ; */
+          /* grid-template-columns: 1fr 4fr 2fr; */
+          /* grid-template-columns: repeat(6,auto); */
+          /* gap: 10px ; */
+          /* row-gap: 10px;
+                column-gap: 10px; */
+          /* grid-template-rows: repeat(3,100px); */
+          /* grid-template-rows: 200px 500px;
+                grid-auto-rows: 300px; */
+          /* grid-template-columns: 200px 400px 100px auto; */
+          /* grid-template-columns: repeat(auto-fit, minmax(200px,200px));
+                gap: 1rem;
+                justify-content: center;
+                height: 100vh; */
+
+          grid-template-areas: 
+          "navbar navbar navbar navbar navbar navbar navbar navbar navbar ",
+           "sidebar main  main main main main main main",
+      }
+
+      .item {
+          border: 2px solid rgb(53, 56, 47);
+          background-color: green;
+          padding: 1rem;
+          /* width: 100px; */
+      }
+
+      /* .second{
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end:6;
+            } */
+
+      #navbar {
+        grid-area: navbar;
+        height: 10vh;
+      }
+
+      #main {
+        grid-area: main;
+        height: 90vh;
+      }
+
+      #sidebar {
+        height: 90vh;
+        grid-area: sidebar;
+      }
+    </style>
+  </head>
+
+  <body> 
+    <!-- shortcut for create 10 div at a time
+    .item{this is my item no. $}*10 -->
+    <div class="parent">
+      <div class="item" id="navbar">hey this is my navbar</div>
+      <div class="item" id="main">hey this is my main</div>
+      <div class="item" id="sidebar">hey this is my sidebar</div>
+    </div>
+  </body>
+</html>

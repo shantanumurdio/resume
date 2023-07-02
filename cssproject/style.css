@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parent{
+    background-color: #877a7a;
+    height: 600px;
+    display: flex;
+    width: 80%;
+}
+
+.parent .leftPart{
+    width: 30%;
+    background-color: #e5f9f6 ;
+}
+
+.leftPart .leftProfile{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leftPart .leftProfile img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.leftPart .leftProfile .userName{
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.leftPart .leftProfile .userName .userDesg{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.leftPart .leftMenu{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftPart .leftMenu ul li{
+    list-style: none;
+    padding: 20px 0;
+    
+}
+
+.leftPart .leftMenu ul li .menuName{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.leftMenu ul li {
+    border: 1px solid red;
+    margin: 10px;
+    
+    
+}
+
+.parent .rightPart{
+    width: 70%;
+    background-color: #c7f2ee;
+}

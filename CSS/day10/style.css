@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+
+#div1{
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 10%;
+    background-color: blue;
+    position: absolute;
+    animation-name: div1_animation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+
+
+@keyframes div1_animation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div{
+    height: 100px;
+    width:  100px;
+    top: 20%;
+    left: 20%;
+    margin: 10%;
+    background-color: rgb(255, 0, 0); */
+    /* transform: rotate(120deg);
+    transform: scale(3.5);
+    transform: scaleX(2.5);
+    transform: scaleY(1.5);
+    transform: translate(50px,100px); */
+    /* transform: skew(40deg); */
+    /* transition: height 2s ease-in-out 0.5s; */
+/* } */
+
+/* div:hover{
+    height: 400px;
+    width: 400px;
+} */
+
+

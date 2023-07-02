@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainParent{
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+            display: grid;
+            /* grid-template-columns:  1fr 1fr 1fr 1fr;
+            grid-template-rows:  1fr 1fr 1fr 1fr; */
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .cell{
+            background-color: rgb(54, 53, 53);
+        }
+    </style>
+</head>
+<body>
+    <div class="mainParent">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>    
+      
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+</body>
+</html>

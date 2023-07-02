@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: xx-large;
+            color: red;
+        }
+
+        p::first-line{
+            background-color: yellow;
+            color: grey;
+        }
+
+        p::selection{
+            background-color: yellow;
+            color: red;
+        }
+
+
+        p::before{
+            content: "tooltip";
+            color: white;
+            background-color: rgba(0, 0, 0, 0.443);
+            display: block;
+            text-align: center;
+            width: fit-content;
+            margin: auto;
+            margin-top: .5rem;
+            padding: 0 1rem;
+            border-radius: 5px;
+        }
+
+        p:hover:after{
+            content: "tooltip";
+            color: white;
+            background-color: rgba(0, 0, 0, 0.443);
+            display: block;
+            text-align: center;
+            width: fit-content;
+            margin: auto;
+            margin-top: .5rem;
+            padding: 0 1rem;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae illo dicta nihil dolor! Expedita iusto officia enim illo repellat aut esse maiores cupiditate eveniet. Est temporibus dolores earum, magni eligendi quis esse rem ut excepturi explicabo voluptas amet repellat molestiae velit eum, vel fuga consequuntur deleniti voluptates debitis saepe modi assumenda? Quaerat ipsam quidem quos ipsa est ullam suscipit et delectus illo, corporis, adipisci, deleniti soluta velit consectetur enim itaque. Provident accusantium eveniet corporis! Sit rerum, fugit asperiores placeat modi vel perferendis tempora voluptatibus doloribus rem possimus cumque earum amet. Tempora quisquam magni dolore provident. Doloribus alias rerum esse!</p>
+</body>
+</html>
